@@ -82,4 +82,5 @@ export const experience = [
 export const certifications = [
   "Data Visualization in R — Johns Hopkins University (Coursera)",
   "Introduction to Machine Learning — IBM (Coursera)",
+  "Artificial Intelligence – Information Technology Specialist"
 ]

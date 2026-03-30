@@ -21,22 +21,26 @@ const Hero = () => {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, ease: 'easeOut' }}
         >
-          <p className="text-primary font-semibold text-base tracking-widest uppercase mb-3">
-            Welcome to my portfolio
+          <p className="text-primary font-semibold text-sm tracking-widest uppercase mb-3">
+              AI Developer • Full Stack Engineer
           </p>
 
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-black text-white leading-tight">
             Hi, I'm{' '}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-purple-300">
-              Sumeet 
+              Sumeet
             </span>
           </h1>
 
-          <p className="text-gray-400 text-lg md:text-xl mt-5 max-w-lg leading-relaxed">
-            CS Fresher · AI/ML Enthusiast · <br className="hidden sm:block" />
-            Building real things with code.
+          <p className="text-gray-300 text-lg md:text-xl mt-5 max-w-xl leading-relaxed">
+            I’m a developer passionate about building intelligent systems and modern web applications using AI, data, and design.
           </p>
 
+          <div className="mt-4 text-gray-400 text-sm space-y-1">
+            <p>✔ Built AI/ML and Brain-Computer Interface projects</p>
+            <p>✔ Hands-on experience with React, Python, and real-world apps</p>
+            <p>✔ Strong focus on problem-solving and learning by building</p>
+          </div>
           <Motion.div
             className="mt-8 flex flex-wrap gap-4"
             initial={{ opacity: 0, y: 20 }}

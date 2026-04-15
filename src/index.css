@@ -66,3 +66,40 @@ section + section,
   border-radius: 50%;
   margin: 4px auto 0;
 }
+
+body {
+  cursor: none;
+}
+
+.ripple {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(145, 94, 255, 0.4);
+  transform: scale(0);
+  animation: ripple-animation 600ms linear;
+  pointer-events: none;
+}
+
+@keyframes ripple-animation {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+
+[id] {
+  scroll-margin-top: 80px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#about, #skills, #education, #experience, #projects, #contact {
+  scroll-margin-top: 80px;
+}
+
+a[name] {
+  display: block;
+  scroll-margin-top: 80px;
+}

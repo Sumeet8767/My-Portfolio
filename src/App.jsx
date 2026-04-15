@@ -1,32 +1,25 @@
-import { BrowserRouter } from 'react-router-dom'
+
 import { Navbar, Hero, About, Skills, Education, Experience, Projects, Contact, Footer } from './components'
+import CustomCursor from "./components/CustomCursor"
+import {BrowserRouter, Routes, Route } from 'react-router-dom'
 
 const App = () => {
   return (
     <BrowserRouter>
-      <div className="relative z-0 bg-dark overflow-x-hidden">
+     <Navbar />
+      <Routes>
+        <Route path="/" element={<Hero />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/skills" element={<Skills />} />
+        <Route path="/education" element={<Education />} />
+        <Route path="/experience" element={<Experience />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+      {/* 🔥 CUSTOM CURSOR (ADD HERE) */}
+      <CustomCursor />
 
-        <div className="fixed inset-0 z-0 pointer-events-none overflow-hidden">
-          <div className="absolute top-[-20%] right-[-10%] w-[600px] h-[600px] bg-primary/5 rounded-full blur-[120px]" />
-          <div className="absolute bottom-[-20%] left-[-10%] w-[500px] h-[500px] bg-purple-900/10 rounded-full blur-[100px]" />
-        </div>
-
-        <div className="relative z-10 bg-transparent">
-          <Navbar />
-          <Hero />
-        </div>
-
-        <div className="relative z-10">
-          <About />
-          <Skills />
-          <Education />
-          <Experience />
-          <Projects />
-          <Contact />
-          <Footer />
-        </div>
-
-      </div>
+     <Footer />
     </BrowserRouter>
   )
 }

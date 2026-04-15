@@ -1,45 +1,79 @@
 export const navLinks = [
-  { id: "about", title: "About" },
-  { id: "skills", title: "Skills" },
-  { id: "education", title: "Education" },
-  { id: "experience", title: "Experience" },
-  { id: "projects", title: "Projects" },
-  { id: "contact", title: "Contact" },
+  { id: "about", title: "About", path: "/about" },
+  { id: "skills", title: "Skills", path: "/skills" },
+  { id: "education", title: "Education", path: "/education" },
+  { id: "experience", title: "Experience", path: "/experience" },
+  { id: "projects", title: "Projects", path: "/projects" },
+  { id: "contact", title: "Contact", path: "/contact" },
 ]
 
 export const skills = [
   {
-    category: "Languages",
-    items: ["Python", "Java", "JavaScript", "SQL"],
+    category: "Programming",
+    items: [
+      "Python",
+      "Java",
+      "C++",
+      "SQL"
+    ]
   },
   {
     category: "ML & AI",
-    items: ["NumPy", "Pandas", "Scikit-learn", "TensorFlow", "Machine Learning", "Deep Learning"],
+    items: [
+      "Machine Learning",
+      "Deep Learning",
+      "CNNs",
+      "Data Preprocessing",
+    ]
   },
   {
-    category: "Web & Backend",
-    items: ["HTML", "CSS", "React", "Flask", "MySQL"],
+    category: "Web Development",
+    items: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React",
+    ]
   },
   {
-    category: "Tools & Automation",
-    items: ["Git", "GitHub", "VS Code", "Arduino", "Raspberry Pi"],
+    category: "Core CS Fundamentals",
+    items: [
+      "Data Structures",
+      "Algorithms",
+      "OOP",
+      "Operating Systems",
+      "DBMS",
+      "Computer Networks"
+    ]
   },
+  {
+    category: "Tools & Systems",
+    items: [
+      "Git",
+      "GitHub",
+      "VS Code",
+      "IntelliJ IDEA",
+      "Arduino",
+      "Raspberry Pi",
+      "Cursor"
+    ]
+  }
 ]
 
 export const projects = [
   {
     name: "TB Detection Using Deep Learning",
-    description:
-      "A deep learning-based system to detect tuberculosis from chest X-ray images using CNNs. Includes image preprocessing, model training, and evaluation to improve diagnostic accuracy and automate TB screening.",
-    tags: ["Python", "Deep Learning", "CNN", "Medical AI"],
+    category: "Deep Learning · Medical AI",
+    shortDescription: "Built a CNN-based system to detect tuberculosis from chest X-rays, improving diagnostic accuracy and automating screening.",
+    tags: ["Python", "CNN", "Medical AI"],
     github: "https://github.com/Sumeet8767",
     live: "https://github.com/Sumeet8767/TB_Detection_Deep_learing",
   },
   {
-    name: "Brain-Computer Interface System",
-    description:
-      "Real-time BCI system for brain signal processing and classification using machine learning. Integrated EEG sensors with Raspberry Pi and Arduino for real-time device control and signal interpretation.",
-    tags: ["Python", "ML", "EEG", "Raspberry Pi", "Arduino"],
+    name: "Brain-Computer Interface App",
+    category: "AI · Machine Learning · Healthcare",
+    shortDescription: "Built a BCI system that analyzes EEG signals to deliver real-time cognitive training and feedback.",
+    tags: ["Python", "ML", "EEG", "Android"],
     github: "https://github.com/Sumeet8767",
     live: "https://github.com/Sumeet8767/BCI-Brain-Health-Pro",
   },
